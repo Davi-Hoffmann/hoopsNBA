@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f0f0f0; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    margin: 0;
+    padding: 0;
+    color: #333333; 
+}
+
+h1 {
+    font-size: 3rem;
+    color: #1e3a8a; 
+    text-align: center;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+section input {
+    width: 26rem;
+    border: 2px solid #7c3aed; 
+    padding: 1rem;
+    border-radius: 10px; 
+    margin-bottom: 1rem;
+    color: #333333;
+    font-size: 1.1rem;
+    background-color: #ffffff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    outline: none;
+}
+
+section input:focus {
+    border-color: #f97316; 
+    box-shadow: 0 4px 12px rgba(249, 115, 22, 0.4); 
+}
+
+section button {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 50px; 
+    background-color: #7c3aed; 
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+section button:hover {
+    background-color: #f97316; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+}
+
+section p {
+    font-size: 0.9rem;
+}
+
+.resultados-pesquisa {
+    width: 60rem; 
+    max-width: 90%; 
+    margin: 0 auto; 
+    padding: 1rem;
+}
+
+.item-resultado {
+    display: flex;
+    background: #f9f9f9; 
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    align-items: center;
+    gap: 30px; 
+    width: 100%; 
+}
+
+.logo {
+    width: 10rem; 
+    height: 10rem; 
+    border: 2px solid #7c3aed;
+    border-radius:30%; 
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(13, 7, 7, 0.1); 
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    color: #333333; 
+    flex-grow: 1;
+}
+
+.item-resultado h2 {
+    font-size: 1.6rem;
+    color: #1e3a8a; 
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.item-resultado a {
+    text-decoration: none;
+    color: #f97316; 
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+
+.item-resultado a:hover {
+    text-decoration: underline;
+}
+
+.descricao-meta {
+    color: #666666;
+    margin: 0.5rem 0;
+}
+
+footer {
+    background-color: #1e3a8a;
+    color: #ffffff;
+    text-align: center;
+    padding: 0.5rem 0; 
+    width: 100%;
+    position: relative; 
+    bottom: 0;
+    font-size: 0.9rem; 
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1); 
+    margin-top: auto; 
+}
+
+main {
+    flex: 1; 
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+        letter-spacing: 0.2rem;
+    }
+
+    section input {
+        width: 20rem;
+    }
+
+    .resultados-pesquisa {
+        width: 90%; 
+    }
+
+    .item-resultado h2 {
+        font-size: 1.4rem;
+    }
+
+    .item-resultado {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo {
+        width: 8rem; 
+        height: 8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+        letter-spacing: 0.1rem;
+    }
+
+    section input {
+        width: 18rem;
+    }
+
+    section button {
+        padding: 0.8rem 1rem;
+        font-size: 1rem;
+    }
+
+    .resultados-pesquisa {
+        width: 90%;
+    }
+
+    .item-resultado {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .logo {
+        width: 7rem; 
+        height: 7rem;
+    }
+
+    .item-resultado h2 {
+        font-size: 1.2rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
