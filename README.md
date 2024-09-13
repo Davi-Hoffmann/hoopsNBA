@@ -4,7 +4,7 @@ Uma aplicação web que mostra informações sobre os times da NBA, feita com um
 
 ![image](https://github.com/user-attachments/assets/053ba04b-6651-4231-9f1c-76f72006a269)
 
-Link do projeto: https://hoops-nba.vercel.app/ 
+Link do projeto: https://hoops-nba.vercel.app/
 
 ## Ferramentas utilizadas:
 
